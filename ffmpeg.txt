@@ -1,0 +1,4 @@
+ffmpeg -rtsp_transport tcp -fflags +genpts -use_wallclock_as_timestamps 1 -i "rtsp://admin:Admin%40123@192.168.2.4" -muxdelay 0.5 -b:v 5000k -c:v libx264 -vf scale=512:288 -f flv rtmp://localhost/live/stream    - ------------------final output    this is  for 192.168.2.4
+
+
+ffmpeg -rtsp_transport tcp -fflags +genpts+nobuffer -i "rtsp://admin:Admin%40123@192.168.2.11" -muxdelay 0.5 -b:v 500k -c:v libx264 -vf scale=512:288 -ar 44100 -ac 2 -c:a aac -avoid_negative_ts make_zero -f flv rtmp://localhost/live/stream  ----------------------- this is  for 192.168.2.11
