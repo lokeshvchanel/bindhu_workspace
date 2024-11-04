@@ -1,0 +1,4 @@
+ultralytics
+opencv-python
+opencv-python-headless  # Optional for non-GUI environments
+numpy

@@ -1,0 +1,7 @@
+streamlit==1.26.0
+opencv-python==4.10.0
+numpy==1.26.3
+ultralytics==8.2.45
+twilio==8.3.0
+smtplib  # Already built-in with Python but included for clarity
+email    # Part of Python's standard library (for email handling)
